@@ -22,6 +22,10 @@ public class Employee {
         this.leaveBalance = 20;
     }
 
+    public void updateLeaveBalance(int days) {
+        leaveBalance -= days;
+    }
+
     public boolean requestLeave(int numberOfDays) {
 
         System.out.println("Requesting " + numberOfDays + " days of leave for " + name + "...");
